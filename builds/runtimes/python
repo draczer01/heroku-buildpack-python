@@ -73,6 +73,8 @@ CONFIGURE_OPTS=(
   # Build the `pyexpat` module using the `expat` library in the stack image (which will
   # automatically receive security updates), rather than CPython's vendored version.
   "--with-system-expat"
+  
+  "--enable-shared"
 )
 
 if [[ "${VERSION}" != 3.7.* ]]; then
